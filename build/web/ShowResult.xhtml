@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style>
+            div{
+                margin: auto;
+                width:350px;
+                height: 500px;
+                background-color: #66ff66;
+                padding-left:50px;
+
+                font-size: 18px;
+                padding-right: 50px
+
+            }
+            p{
+
+            }
+            .button{ 
+                margin-left: 150px;
+                height: 25px;
+                width: 100px;
+                margin-top: 10px;
+            }
+            h2{
+                padding: 20px;
+            }
+            .tab{
+
+                border-collapse: collapse;
+                column-width: 100px;
+            }
+            table tr td tr{
+                text-align: center;
+                width: 120px;
+
+            }
+
+
+        </style>
+    </h:head>
+    <h:body>
+
+        <div>
+            <h2>Satirpara Primary School</h2>
+            <h:form class="fo">
+                <table>
+                    <tr>
+                        <td class="tr" >Student id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :</td>
+                        <td class="tr" ><h:outputText value="#{studentDetails.id}"></h:outputText> </td>
+                    </tr>
+                    <tr>
+                        <td class="tr" >Student Name &nbsp; :</td>
+                        <td class="tr" ><h:outputText value="#{studentDetails.name}"></h:outputText></td>
+                    </tr>
+                    <tr>
+                        <td class="tr" >Student Email&nbsp;&nbsp; :</td>
+                        <td class="tr" ><h:outputText value="#{studentDetails.email}"></h:outputText></td>
+                    </tr>
+                    <tr>
+                        <td class="tr" >Student mobile  :</td>
+                        <td class="tr" ><h:outputText value="#{studentDetails.mobile}"></h:outputText></td>
+                    </tr>
+                    <tr>
+                        <td class="tr" >CGPA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :</td>
+                        <td class="tr" ><h:outputText value="#{studentDetails.grade}"></h:outputText></td>
+                    </tr>
+
+                </table>
+
+
+                <h3 >Result :</h3>
+
+
+                <table  class="tab" border="1px solid black"  >
+                    <colgroup>
+                        <col span="1" style="width: 120px;"></col>
+                        <col span="1" style="width: 80px; text-align: center"></col>
+                        <col span="1" style="width: 80px; text-align: center"></col>
+                        <col span="1" style="width: 80px; text-align: center"></col>
+
+                    </colgroup>
+                    <tbody>
+                        <th>Subject name</th><th>Number</th><th>Grade</th><th>GPA</th>
+                        <tr>
+                            <td>Bangla </td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.n1}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.grn1}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.gn1}"></h:outputText></td>
+                        </tr>
+                        <tr>
+                            <td>English  </td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.n2}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.grn2}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.gn2}"></h:outputText></td>
+                        </tr>
+                        <tr>
+                            <td>Math  </td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.n3}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.grn3}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.gn3}"></h:outputText></td>
+                        </tr>
+                        <tr>
+                            <td>Sociology </td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.n4}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.grn4}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.gn4}"></h:outputText></td>
+                        </tr>
+                        <tr>
+                            <td>G.Knowledge</td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.n5}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.grn5}"></h:outputText></td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.gn5}"></h:outputText></td>
+                        </tr>
+                        <tr>
+                            <td style=" text-align: center">Total</td>
+                            <td style=" text-align: center"> <h:outputText value="#{studentDetails.sum}"></h:outputText></td>
+                            <td style=" text-align: center"> </td>
+                            <td style=" text-align: center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h:form>
+        </div>
+
+    </h:body>
+</html>
+

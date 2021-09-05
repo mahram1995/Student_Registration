@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <style>
+            div{
+                margin: auto;
+                width:350px;
+                height: 500px;
+                background-color: #66ff66;
+                padding-left:50px;
+                
+                font-size: 18px;
+                padding-right: 50px
+
+            }
+            p{
+               
+            }
+            .button{ 
+                margin-left: 150px;
+                height: 25px;
+                width: 100px;
+                margin-top: 10px;
+            }
+            h2{
+              padding: 20px;
+            }
+            
+
+        </style>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <div>
+            <h2>Satirpara Primary School</h2>
+            <h:form class="fo">
+                <table>
+                    <tr>
+                        <td>Student id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   :</td>
+                        <td><h:inputText class="in" value="#{studentDetails.id}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>Student Name &nbsp; :</td>
+                        <td><h:inputText class="in" value="#{studentDetails.name}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>Student Email&nbsp;&nbsp; :</td>
+                        <td><h:inputText class="in" value="#{studentDetails.email}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>Student mobile  :</td>
+                        <td><h:inputText class="in" value="#{studentDetails.mobile }"   > </h:inputText></td>
+                    </tr>
+
+                </table>
+               
+
+                <h3 >Subjcet wish Marks :</h3>
+               
+                
+                <table>
+                    <tr>
+                        <td>Bangla  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                        <td><h:inputText class="in" value="#{studentDetails.n1}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>English  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                        <td><h:inputText class="in" value="#{studentDetails.n2}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>Math  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                        <td><h:inputText class="in" value="#{studentDetails.n3}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>Sociology  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+                        <td><h:inputText class="in" value="#{studentDetails.n4}"  > </h:inputText></td>
+                    </tr>
+                    <tr>
+                        <td>G.Knowledge  :</td>
+                        <td><h:inputText class="in" value="#{studentDetails.n5}"  > </h:inputText></td>
+                    </tr>
+                </table>
+
+               
+
+                <h:commandButton class="button" value="submit" action="ShowResult.xhtml"></h:commandButton>
+            </h:form>
+        </div>
+    </h:body>
+
+</html>
+
